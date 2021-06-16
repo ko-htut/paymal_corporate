@@ -10,8 +10,8 @@ class BarChartWidget extends StatefulWidget {
 
 class BarChartWidgetState extends State<BarChartWidget> {
   final Color blue = const Color(0xff4371c3);
-  final Color orange = const Color(0xffec7d31);
-  final Color grey = const Color(0xffa4a4a4);
+  // final Color orange = const Color(0xffec7d31);
+  // final Color grey = const Color(0xffa4a4a4);
   final formatter = NumberFormat('###,###');
 
   @override
@@ -84,7 +84,7 @@ class BarChartWidgetState extends State<BarChartWidget> {
                         bottom: BorderSide(color: Color(0xffe7e4e4)),
                       )
                     ),
-                    groupsSpace: 30,
+                    groupsSpace: 60,
                     maxY: 600000,
                     // axisTitleData: FlAxisTitleData(
                     //   topTitle: AxisTitle(
@@ -106,18 +106,6 @@ class BarChartWidgetState extends State<BarChartWidget> {
                 Indicator(
                   color: blue,
                   text: 'AYA Bank',
-                  isSquare: true,
-                ),
-                SizedBox(width: 12,),
-                Indicator(
-                  color: orange,
-                  text: 'CB Bank',
-                  isSquare: true,
-                ),
-                SizedBox(width: 12,),
-                Indicator(
-                  color: grey,
-                  text: 'KBZ Bank',
                   isSquare: true,
                 ),
               ],
@@ -142,19 +130,19 @@ class BarChartWidgetState extends State<BarChartWidget> {
                 BarChartRodStackItem(0, 430000, blue),
               ],
               borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 240000,width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 240000, orange),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 200000,
-              width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 200000, grey),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 240000,width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 240000, orange),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 200000,
+          //     width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 200000, grey),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
         ],
       ),
       BarChartGroupData(
@@ -168,20 +156,20 @@ class BarChartWidgetState extends State<BarChartWidget> {
                 BarChartRodStackItem(0, 250000, blue),
               ],
               borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 440000,
-              width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 440000, orange),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 200000,
-              width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 200000, grey),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 440000,
+          //     width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 440000, orange),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 200000,
+          //     width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 200000, grey),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
         ],
       ),
       BarChartGroupData(
@@ -195,20 +183,20 @@ class BarChartWidgetState extends State<BarChartWidget> {
                 BarChartRodStackItem(0, 350000, blue),
               ],
               borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 180000,
-              width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 180000, orange),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 300000,
-              width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 300000, grey),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 180000,
+          //     width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 180000, orange),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 300000,
+          //     width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 300000, grey),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
         ],
       ),
       BarChartGroupData(
@@ -222,20 +210,20 @@ class BarChartWidgetState extends State<BarChartWidget> {
                 BarChartRodStackItem(0, 450000, blue),
               ],
               borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 280000,
-              width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 280000, orange),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
-          BarChartRodData(
-              y: 500000,
-              width: width,
-              rodStackItems: [
-                BarChartRodStackItem(0, 500000, grey),
-              ],
-              borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 280000,
+          //     width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 280000, orange),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
+          // BarChartRodData(
+          //     y: 500000,
+          //     width: width,
+          //     rodStackItems: [
+          //       BarChartRodStackItem(0, 500000, grey),
+          //     ],
+          //     borderRadius: const BorderRadius.all(Radius.zero)),
         ],
       ),
     ];
