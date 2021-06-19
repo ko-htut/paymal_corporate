@@ -167,7 +167,7 @@ class DateSearchReport extends StatelessWidget {
                     height: 32,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Text('CSV Download'),
+                      child: Text('CSV'),
                       style: ElevatedButton.styleFrom(primary: Color(0xff00447b)),
                     ),
                   )
@@ -189,6 +189,71 @@ class DateSearchReport extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('Status'),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      SizedBox(
+                        width: 160,
+                        height: 32,
+                        child: InputDecorator(
+                          decoration: InputDecoration(
+                              isDense: true,
+                              contentPadding:const EdgeInsets.only(left: 12,right: 4),
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(3.0))),
+                          child: DropdownButtonHideUnderline(
+                            child: DropdownButton<String>(
+                              hint: Text('All'),
+                              value: 'All',
+                              style: TextStyle(color: Colors.black54),
+                              isDense: false,
+                              onChanged: (newValue) {},
+                              items: {'All', 'Name One', 'Name Two'}.map((String value) {
+                                return DropdownMenuItem<String>(
+                                  value: value,
+                                  child: Text(value),
+                                );
+                              }).toList(),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  // SizedBox(
+                  //   width: 32,
+                  // ),
+                  // Column(
+                  //   crossAxisAlignment: CrossAxisAlignment.start,
+                  //   children: [
+                  //     Text('Search'),
+                  //     SizedBox(
+                  //       height: 4,
+                  //     ),
+                  //     SizedBox(
+                  //       width: 160,
+                  //       height: 32,
+                  //       child: TextFormField(
+                  //         decoration: const InputDecoration(
+                  //             hintStyle: TextStyle(color: Colors.black45),
+                  //             errorStyle: TextStyle(color: Colors.redAccent),
+                  //             border: OutlineInputBorder(),
+
+
+                  //             contentPadding: EdgeInsets.symmetric(horizontal: 12),
+                  //             isDense: false),
+                  //         autovalidateMode: AutovalidateMode.always,
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
+                  SizedBox(
+                    width: 32,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Service Region'),
                       SizedBox(
                         height: 4,
                       ),
@@ -243,44 +308,6 @@ class DateSearchReport extends StatelessWidget {
                               contentPadding: EdgeInsets.symmetric(horizontal: 12),
                               isDense: false),
                           autovalidateMode: AutovalidateMode.always,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 32,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Service Region'),
-                      SizedBox(
-                        height: 4,
-                      ),
-                      SizedBox(
-                        width: 160,
-                        height: 32,
-                        child: InputDecorator(
-                          decoration: InputDecoration(
-                              isDense: true,
-                              contentPadding:const EdgeInsets.only(left: 12,right: 4),
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(3.0))),
-                          child: DropdownButtonHideUnderline(
-                            child: DropdownButton<String>(
-                              hint: Text('All'),
-                              value: 'All',
-                              style: TextStyle(color: Colors.black54),
-                              isDense: false,
-                              onChanged: (newValue) {},
-                              items: {'All', 'Name One', 'Name Two'}.map((String value) {
-                                return DropdownMenuItem<String>(
-                                  value: value,
-                                  child: Text(value),
-                                );
-                              }).toList(),
-                            ),
-                          ),
                         ),
                       ),
                     ],

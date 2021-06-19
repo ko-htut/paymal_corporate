@@ -58,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             children: [
                               Container(
                                 child: Text(
-                                  'User name',
+                                  'Username',
                                   style:
                                       _textStyle(18, fontWeight: FontWeight.bold),
                                 ),
@@ -71,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               TextFormField(
                                 controller: _emailController,
                                 decoration: InputDecoration(
-                                  hintText: "cooperateadmin",
+                                  hintText: "corporateadmin",
                                     border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(5.0))),
                               ),
