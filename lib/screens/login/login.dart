@@ -31,15 +31,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    height: 160,
-                    width: 160,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/aya.png'),
-                        ),
-                        borderRadius: BorderRadius.circular(100)),
-                  ),
+                  // Container(
+                  //   height: 160,
+                  //   width: 160,
+                  //   decoration: BoxDecoration(
+                  //       image: DecorationImage(
+                  //         image: AssetImage('assets/icons/aya.png'),
+                  //       ),
+                  //       borderRadius: BorderRadius.circular(100)),
+                  // ),
                   SizedBox(height: 8,),
                   SizedBox(
                     child: Card(
